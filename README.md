@@ -1,2 +1,2 @@
-# Responsive-landing-page
-Responsive Bootstrap Landing Page web app
+# Responsive
+Data collection Page web app
