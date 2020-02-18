@@ -1,46 +1,80 @@
 <!DOCTYPE html>
-<html ng-app="ngScorekeeper" ng-controller="AppCtrl" manifest="manifest.appcache">
-  <head>
-    <meta charset="utf-8">
-    <title ng-bind="eDesk"></title>
-    
-    <link rel="manifest" href="manifest.webmanifest">
-    <script>
-	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('service-worker.js');
-	}
-	</script>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MRX5VPQ');</script>
-<!-- End Google Tag Manager -->
-    <link rel="icon" href="assets/favicon.png">
-
-    <meta name="apple-mobile-web-app-title" content="eDesk">
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-touch-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-touch-icon-152x152.png">
+<body class="w3-content" style="max-width:1300px">
 
-    <meta property="og:title" content="eDesk" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="eDesk: work Smarter, not Harder.">
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>My Logo</h1>
+    </div>
+    <div class="w3-padding-64">
+      <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Traffic</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Stop & Search</a>
+    </div>
+  </div>
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-center">
+      <h1>About Me</h1>
+      <img src="/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
+      <div class="w3-left-align w3-padding-large">
+        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-   
- 
-  </head>
-  <body>
-    <header>
-    
-    </header>
-    <main ui-view="main"></main>
-<iframe id="" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://forms.app/form/5e49cbd99a86e34e0b1d5def" frameborder="0" style="width: 1px; min-width:100%;  border:none;"></iframe>
-  </body>
-  </footer>
+<!-- Second Grid: Work & Resume -->
+
+<!-- Third Grid: Swing By & Contact -->
+<div class="w3-row" id="contact">
+  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>Swing By</h1>
+    </div>
+    <div class="w3-padding-64">
+      <p>..for a cup of coffee, or whatever.</p>
+      <p>Chicago, US</p>
+      <p>+00 1515151515</p>
+      <p>test@test.com</p>
+    </div>
+  </div>
+  <div class="w3-half w3-teal w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-padding-large">
+      <h1>Contact</h1>
+      <p class="w3-opacity">GET IN TOUCH</p>
+      <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Email">
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Message">
+        </div>
+        <button type="submit" class="w3-button w3-teal w3-right">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+
+</footer>
+
+</body>
 </html>
