@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app="ngScorekeeper" ng-controller="AppCtrl" manifest="manifest.appcache">
+  <head>
+    <meta charset="utf-8">
+    <title ng-bind="pageTitle"></title>
+    
+    <link rel="manifest" href="manifest.webmanifest">
+    <script>
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('service-worker.js');
+	}
+	</script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MRX5VPQ');</script>
+<!-- End Google Tag Manager -->
+    <link rel="icon" href="assets/favicon.png">
+
+    <meta name="apple-mobile-web-app-title" content="Digu League">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-touch-icon-152x152.png">
+
+    <meta name="twitter:description" content="Digu League: A simple way to track scores for card games">
+    <meta name="twitter:image:src" content="/assets/scorekeeper.jpg">
+    <meta property="og:title" content="scorekeeper" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/scorekeeper.jpg" />
+    <meta property="og:description" content="Digu League: A simple way to track scores for board and card games">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+    
+    <link rel="stylesheet" type="text/css" href="assets/scorekeeper-0.0.11.css" />
+
+    
+    <script type="text/javascript" src="assets/scorekeeper-0.0.11.js"></script>
+  </head>
+  <body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRX5VPQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <header>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href ui-sref="home">
+              Digu LeaGue
+            </a>
+          </div>
+        </div>
+          <ul class="nav navbar-nav">
+            <li ui-sref-active="active">
+              <a href ui-sref="players">
+                <i class="fa fa-user"></i>
+                <span class="nav-label">Players</span>
+              </a>
+            </li>
+            <li ui-sref-active="active">
+              <a href ui-sref="scores">
+                <i class="fa fa-pencil-square-o"></i>
+                <span class="nav-label">Scores</span>
+              </a>
+            </li>
+            <li ui-sref-active="active">
+              <a href ui-sref="games">
+                <i class="fa fa-trophy"></i>
+                <span class="nav-label">Games</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main ui-view="main"></main>
+
+    <footer class="footer" align="center">
+      <div class="container">
+        <div class="footer-inner">
+            </a>
+            &copy; 2018.
+            <a href="mailto:blog@anday.me">And4yy</a> Thank you
+            <br />
+<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#b84646', 'W7W68ZFP');kofiwidget2.draw();</script> 
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
